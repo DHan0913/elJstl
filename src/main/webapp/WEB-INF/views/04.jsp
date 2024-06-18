@@ -28,9 +28,26 @@
 	
 	
 	
-	<h2>el</h2>                 
-
-
+	<h2>el</h2>   
+	<h3>Scope Test 1 (requestScope)</h3> 
+	<!--  요청의 속성에 접근하는 방법 
+		스코프명.어트리뷰트명-->        
+	<ul>
+	<li>ReqeustScope : ${requestScope.userVo.name }</li>
+	<li>SessionScope : ${sessionScope.userVo2.name }</li>
+	<li>ApplicationScope : ${applicationScope.userVo3.name }</li>
+	
+	</ul>
+	
+	<h3>Scope Test 2</h3>
+	<!-- 스코프를 명시하지 않으면
+		pageScope -> requestScope -> sessionScope -> applicationScope
+		-->
+	<ul>
+		<li>RequestScope : ${userVo.name }</li>
+		<li>SessionScope : ${userVo2.name }</li>
+		<li>ApplicationScope : ${userVo3.name }</li>
+	</ul>
 	
 	
 </body>

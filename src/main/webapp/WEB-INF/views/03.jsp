@@ -28,6 +28,12 @@
 		
 		
 	<h2>el parameter값 꺼내쓰기</h2>
+	<ul>
+	<li>id = ${ param.id }</li> 
+	<li>pw = ${ param.pw }</li> 
+	<li>name = ${ param.name }</li> 
+	<li>num1 + num2 = ${ param.num1 + param.num2 }</li> 
+	</ul>
 	
 
 
